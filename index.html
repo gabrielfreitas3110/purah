@@ -1538,6 +1538,22 @@
     <div id="floating-cta"><a href="https://nutraestarbem.com.br/pv/" target="_blank" rel="noopener"><span class="lock">🔒</span>GARANTIR MEU PURAH AGORA</a><div id="viewer-count"></div><div id="floating-countdown"></div></div>
 
     <!-- Scripts -->
+	
+	<!-- Meta Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+		  'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1433999444477059');
+		fbq('track', 'PageView');
+	</script>
     <script defer>
       // Breaking news ticker clock
       (function(){const h = document.getElementById('bn-hour'), m = document.getElementById('bn-minute'), s = document.getElementById('bn-second'); function pad2(n){ return n < 10 ? '0' + n : n; } function updateTime(){ const now = new Date(); h.textContent = pad2(now.getHours()); m.textContent = pad2(now.getMinutes()); s.textContent = pad2(now.getSeconds()); } function startClock(){ updateTime(); setTimeout(function tick(){ updateTime(); setTimeout(tick, 1000 - new Date().getMilliseconds()); }, 1000 - new Date().getMilliseconds()); } if (document.readyState === 'complete'){ startClock(); } else { window.addEventListener('load', startClock); }})();
